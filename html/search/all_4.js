@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['generateppm_19',['generatePPM',['../classCamera.html#ac18dca818282f34c852fa7fc55a4ddb9',1,'Camera']]],
+  ['getcamera_20',['getCamera',['../classFactory.html#a3047ea9e281de04fb8316a15a078cdf1',1,'Factory::getCamera()'],['../classParser.html#a88800feb4ceac16ed3a143ae001f85d4',1,'Parser::getCamera()']]],
+  ['getcenter_21',['getCenter',['../classCamera.html#adaff4cef6521007bdf55a393a4adae32',1,'Camera']]],
+  ['getdirection_22',['getDirection',['../classRay.html#a9ef7c78b40c44da7059e24a6e9da8362',1,'Ray']]],
+  ['getfactory_23',['getFactory',['../classParser.html#aaf44e951eff26f8f34b3f5ccaafc6954',1,'Parser']]],
+  ['getfrontface_24',['getFrontFace',['../classHitRecord.html#af056bd50f0203fd3ed5bd66c10d8581d',1,'HitRecord']]],
+  ['getishittable_25',['getIsHittable',['../classAObject.html#acc13513e358caac944c86ebc6d0be293',1,'AObject']]],
+  ['getmat_26',['getMat',['../classHitRecord.html#a5d8e228c6e1bcf9786bfa7fd61854189',1,'HitRecord']]],
+  ['getmax_27',['getMax',['../classInterval.html#a9a7833a07e551193309a13271c6e18ff',1,'Interval']]],
+  ['getmin_28',['getMin',['../classInterval.html#ac899eee4bd4a58aff49b7f66f0faa0af',1,'Interval']]],
+  ['getnormal_29',['getNormal',['../classHitRecord.html#abeab2010509da7d520e6a9783943910a',1,'HitRecord']]],
+  ['getobjects_30',['getObjects',['../classHittableList.html#a5e6c74c717c1561ebfbebe2ce920f7dc',1,'HittableList']]],
+  ['getorigin_31',['getOrigin',['../classRay.html#a62cf3d99e8c3646d50de45f25f577d08',1,'Ray']]],
+  ['getplanes_32',['getPlanes',['../classParser.html#adaebd9e1d5b68de88885e48dc7abc718',1,'Parser']]],
+  ['getposition_33',['getPosition',['../classHitRecord.html#a73d998a17be8dbf7fe5c6da409d0c290',1,'HitRecord']]],
+  ['getray_34',['getRay',['../classCamera.html#a9accc646b9cdfa77eb19ea5123a55c23',1,'Camera']]],
+  ['getrefractionindex_35',['getRefractionIndex',['../classDielectric.html#a4855e755f70c9549a9af4d61be9110a9',1,'Dielectric']]],
+  ['getsize_36',['getSize',['../classInterval.html#a8548b542dd134409d5d60601896b0eab',1,'Interval']]],
+  ['getspheres_37',['getSpheres',['../classParser.html#aeeb65aa638864792c3816295d25dcf1a',1,'Parser']]],
+  ['gettranslation_38',['getTranslation',['../classHitRecord.html#a7aae55e86617809da7ef64d56222492b',1,'HitRecord']]],
+  ['getworld_39',['getWorld',['../classFactory.html#a55137aaab0b9a7a5e98013992af57d85',1,'Factory']]],
+  ['getx_40',['getX',['../classVector3D.html#a6eb2b565b36b32858b79714151fc6df0',1,'Vector3D']]],
+  ['gety_41',['getY',['../classVector3D.html#a40ae4bf4605ba79725876e00861f74c6',1,'Vector3D']]],
+  ['getz_42',['getZ',['../classVector3D.html#a9a4b4c6ee6f7bffa65fb81b2ace4a8eb',1,'Vector3D']]]
+];

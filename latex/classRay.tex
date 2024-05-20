@@ -1,0 +1,126 @@
+\hypertarget{classRay}{}\doxysection{Ray Class Reference}
+\label{classRay}\index{Ray@{Ray}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRay_a2e3d2c29f2df4ab3da10da79d4acb852}\label{classRay_a2e3d2c29f2df4ab3da10da79d4acb852}} 
+\mbox{\hyperlink{classRay_a2e3d2c29f2df4ab3da10da79d4acb852}{Ray}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classRay}{Ray}} object with origin and direction set to (0, 0, 0) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRay_a5cf3fdaa1db73e985321d26865038542}{Ray}} (const \mbox{\hyperlink{classVector3D}{Point3D}} \&origin, const \mbox{\hyperlink{classVector3D}{Vector3D}} \&direction)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classRay}{Ray}} object with specified origin and direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRay_a8b0e575ce5df046c0c7615c32a96a46f}\label{classRay_a8b0e575ce5df046c0c7615c32a96a46f}} 
+\mbox{\hyperlink{classRay_a8b0e575ce5df046c0c7615c32a96a46f}{$\sim$\+Ray}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classRay}{Ray}} object. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classVector3D}{Point3D}} \& \mbox{\hyperlink{classRay_a62cf3d99e8c3646d50de45f25f577d08}{get\+Origin}} () const
+\begin{DoxyCompactList}\small\item\em Get the origin of the ray. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classVector3D}{Vector3D}} \& \mbox{\hyperlink{classRay_a9ef7c78b40c44da7059e24a6e9da8362}{get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em Get the direction of the ray. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRay_a82d4103daac3b3e6cb71d4c1953a6fbf}{set\+Origin}} (const \mbox{\hyperlink{classVector3D}{Point3D}} \&origin)
+\begin{DoxyCompactList}\small\item\em Set the origin of the ray. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRay_a3834a7ff0dae2fa2a3f077c4cd847ae1}{set\+Direction}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} \&direction)
+\begin{DoxyCompactList}\small\item\em Set the direction of the ray. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Point3D}} \mbox{\hyperlink{classRay_abbbdcc5c29360d4aa8de68d832510f12}{at}} (double t) const
+\begin{DoxyCompactList}\small\item\em Get the point at a certain distance along the ray. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRay_a5cf3fdaa1db73e985321d26865038542}\label{classRay_a5cf3fdaa1db73e985321d26865038542}} 
+\index{Ray@{Ray}!Ray@{Ray}}
+\index{Ray@{Ray}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{Ray()}{Ray()}}
+{\footnotesize\ttfamily Ray\+::\+Ray (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Point3D}} \&}]{origin,  }\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{direction }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classRay}{Ray}} object with specified origin and direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & The origin of the ray \\
+\hline
+{\em direction} & The direction of the ray \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRay_abbbdcc5c29360d4aa8de68d832510f12}\label{classRay_abbbdcc5c29360d4aa8de68d832510f12}} 
+\index{Ray@{Ray}!at@{at}}
+\index{at@{at}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Point3D}} Ray\+::at (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption}) const}
+
+
+
+Get the point at a certain distance along the ray. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The distance along the ray \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Point3D The point at distance t along the ray 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRay_a9ef7c78b40c44da7059e24a6e9da8362}\label{classRay_a9ef7c78b40c44da7059e24a6e9da8362}} 
+\index{Ray@{Ray}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{getDirection()}{getDirection()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classVector3D}{Vector3D}} \& Ray\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the direction of the ray. 
+
+\begin{DoxyReturn}{Returns}
+const \mbox{\hyperlink{classVector3D}{Vector3D}}\& The direction of the ray 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRay_a62cf3d99e8c3646d50de45f25f577d08}\label{classRay_a62cf3d99e8c3646d50de45f25f577d08}} 
+\index{Ray@{Ray}!getOrigin@{getOrigin}}
+\index{getOrigin@{getOrigin}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{getOrigin()}{getOrigin()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classVector3D}{Point3D}} \& Ray\+::get\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the origin of the ray. 
+
+\begin{DoxyReturn}{Returns}
+const Point3D\& The origin of the ray 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRay_a3834a7ff0dae2fa2a3f077c4cd847ae1}\label{classRay_a3834a7ff0dae2fa2a3f077c4cd847ae1}} 
+\index{Ray@{Ray}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily void Ray\+::set\+Direction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{direction }\end{DoxyParamCaption})}
+
+
+
+Set the direction of the ray. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & The new direction of the ray \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRay_a82d4103daac3b3e6cb71d4c1953a6fbf}\label{classRay_a82d4103daac3b3e6cb71d4c1953a6fbf}} 
+\index{Ray@{Ray}!setOrigin@{setOrigin}}
+\index{setOrigin@{setOrigin}!Ray@{Ray}}
+\doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}}
+{\footnotesize\ttfamily void Ray\+::set\+Origin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Point3D}} \&}]{origin }\end{DoxyParamCaption})}
+
+
+
+Set the origin of the ray. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & The new origin of the ray \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/Ray.\+hpp\item 
+src/\mbox{\hyperlink{Ray_8cpp}{Ray.\+cpp}}\end{DoxyCompactItemize}

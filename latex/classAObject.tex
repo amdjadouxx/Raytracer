@@ -1,0 +1,65 @@
+\hypertarget{classAObject}{}\doxysection{AObject Class Reference}
+\label{classAObject}\index{AObject@{AObject}}
+
+
+Inheritance diagram for AObject\+:
+% FIG 0
+
+
+Collaboration diagram for AObject\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAObject_a5d05091169e5b7491600d18c1c5f0f29}\label{classAObject_a5d05091169e5b7491600d18c1c5f0f29}} 
+\mbox{\hyperlink{classAObject_a5d05091169e5b7491600d18c1c5f0f29}{AObject}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classAObject}{AObject}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAObject_ac17f3a1944792c280a3cbd83d839bc4e}\label{classAObject_ac17f3a1944792c280a3cbd83d839bc4e}} 
+\mbox{\hyperlink{classAObject_ac17f3a1944792c280a3cbd83d839bc4e}{$\sim$\+AObject}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classAObject}{AObject}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classAObject_ad9e4257d8c0344f44c726962abc46b73}\label{classAObject_ad9e4257d8c0344f44c726962abc46b73}} 
+virtual bool {\bfseries hit} (const \mbox{\hyperlink{classRay}{Ray}} \&r, \mbox{\hyperlink{classInterval}{Interval}} ray\+\_\+t, \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&rec) const override=0
+\item 
+bool \mbox{\hyperlink{classAObject_acc13513e358caac944c86ebc6d0be293}{get\+Is\+Hittable}} () const
+\begin{DoxyCompactList}\small\item\em Get the Is\+Hittable status of the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAObject_aff923791cdfcf290487bff85c06c2dc6}{set\+Is\+Hittable}} (const bool is\+Hittable)
+\begin{DoxyCompactList}\small\item\em Set the Is\+Hittable status of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAObject_acc13513e358caac944c86ebc6d0be293}\label{classAObject_acc13513e358caac944c86ebc6d0be293}} 
+\index{AObject@{AObject}!getIsHittable@{getIsHittable}}
+\index{getIsHittable@{getIsHittable}!AObject@{AObject}}
+\doxysubsubsection{\texorpdfstring{getIsHittable()}{getIsHittable()}}
+{\footnotesize\ttfamily bool AObject\+::get\+Is\+Hittable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Is\+Hittable status of the object. 
+
+\begin{DoxyReturn}{Returns}
+true If the object is hittable 
+
+false Otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAObject_aff923791cdfcf290487bff85c06c2dc6}\label{classAObject_aff923791cdfcf290487bff85c06c2dc6}} 
+\index{AObject@{AObject}!setIsHittable@{setIsHittable}}
+\index{setIsHittable@{setIsHittable}!AObject@{AObject}}
+\doxysubsubsection{\texorpdfstring{setIsHittable()}{setIsHittable()}}
+{\footnotesize\ttfamily void AObject\+::set\+Is\+Hittable (\begin{DoxyParamCaption}\item[{const bool}]{is\+Hittable }\end{DoxyParamCaption})}
+
+
+
+Set the Is\+Hittable status of the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Hittable} & The new hittable status \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/AObject.\+hpp\item 
+src/AObject.\+cpp\end{DoxyCompactItemize}

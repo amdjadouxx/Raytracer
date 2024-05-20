@@ -1,0 +1,311 @@
+\hypertarget{classCamera}{}\doxysection{Camera Class Reference}
+\label{classCamera}\index{Camera@{Camera}}
+
+
+Inheritance diagram for Camera\+:
+% FIG 0
+
+
+Collaboration diagram for Camera\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCamera_a01f94c3543f56ede7af49dc778f19331}\label{classCamera_a01f94c3543f56ede7af49dc778f19331}} 
+\mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCamera}{Camera}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCamera_a8b08c19d09321ff67fe9fbf93c93ffa9}{Camera}} (int width, double aspect\+Ratio, int samples\+Per\+Pix, int max\+Depth, double vfov, \mbox{\hyperlink{classVector3D}{Point3D}} lookfrom, \mbox{\hyperlink{classVector3D}{Point3D}} lookat, \mbox{\hyperlink{classVector3D}{Vector3D}} vup)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCamera}{Camera}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_ab965ba47361b11919c427af58635036e}{init}} (int width, double aspect\+Ratio, int samples\+Per\+Pix, int max\+Depth, double vfov, \mbox{\hyperlink{classVector3D}{Point3D}} lookfrom, \mbox{\hyperlink{classVector3D}{Point3D}} lookat, \mbox{\hyperlink{classVector3D}{Vector3D}} vup)
+\begin{DoxyCompactList}\small\item\em Initialize the camera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCamera_ad1897942d0ccf91052386388a497349f}\label{classCamera_ad1897942d0ccf91052386388a497349f}} 
+\mbox{\hyperlink{classCamera_ad1897942d0ccf91052386388a497349f}{$\sim$\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classCamera}{Camera}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCamera_a4bb1f0682df5a376c5725bf2a55a8d70}{hit}} (const \mbox{\hyperlink{classRay}{Ray}} \&r, \mbox{\hyperlink{classInterval}{Interval}} ray\+\_\+t, \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&rec) const override
+\begin{DoxyCompactList}\small\item\em Check if a ray hits the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a9b287087edc24fa8d3ff4112d867b6c3}{render}} (const \mbox{\hyperlink{classIHittable}{IHittable}} \&world)
+\begin{DoxyCompactList}\small\item\em Renders the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_ac18dca818282f34c852fa7fc55a4ddb9}{generate\+PPM}} (const std\+::string \&filename, const \mbox{\hyperlink{classHittableList}{Hittable\+List}} \&world)
+\begin{DoxyCompactList}\small\item\em Generates a PPM file from the camera. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Color}} \mbox{\hyperlink{classCamera_a5beb7f0a3e6c4eb7b5f85f6444b6758c}{ray\+Color\+Attribute}} (const \mbox{\hyperlink{classRay}{Ray}} \&r, const \mbox{\hyperlink{classIHittable}{IHittable}} \&world) const
+\begin{DoxyCompactList}\small\item\em Get the color of a ray. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCamera_a6b50d9428ac023689d3aab4d95929fc6}{linear\+To\+Gamma}} (double linear\+\_\+component)
+\begin{DoxyCompactList}\small\item\em Converts a linear color component to a gamma color component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a45bbbf2a8ce2b9dad3790db78cb0b747}{write\+Color}} (std\+::ostream \&out, const \mbox{\hyperlink{classVector3D}{Color}} \&pixel\+\_\+color)
+\begin{DoxyCompactList}\small\item\em Writes a color to a stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRay}{Ray}} \mbox{\hyperlink{classCamera_a9accc646b9cdfa77eb19ea5123a55c23}{get\+Ray}} (int i, int j) const
+\begin{DoxyCompactList}\small\item\em Get a ray from the camera. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classCamera_a0c48ef97ee2ff7ae601837283d8b658f}{sample\+Square}} () const
+\begin{DoxyCompactList}\small\item\em Samples a square. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Color}} \mbox{\hyperlink{classCamera_afb1b536b0263a59a45c023bfad73723e}{ray\+Color}} (const \mbox{\hyperlink{classRay}{Ray}} \&r, int depth, const \mbox{\hyperlink{classHittableList}{Hittable\+List}} \&world) const
+\begin{DoxyCompactList}\small\item\em Get the color of a ray. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Point3D}} \mbox{\hyperlink{classCamera_adaff4cef6521007bdf55a393a4adae32}{get\+Center}} () const
+\begin{DoxyCompactList}\small\item\em Get the center of the camera. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Point3D}} \mbox{\hyperlink{classCamera_a4745dd6ab014b2abd1f3921630e4f978}{defocus\+Disk\+Sample}} () const
+\begin{DoxyCompactList}\small\item\em Get a sample from the defocus disk. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCamera_a8b08c19d09321ff67fe9fbf93c93ffa9}\label{classCamera_a8b08c19d09321ff67fe9fbf93c93ffa9}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{double}]{aspect\+Ratio,  }\item[{int}]{samples\+Per\+Pix,  }\item[{int}]{max\+Depth,  }\item[{double}]{vfov,  }\item[{\mbox{\hyperlink{classVector3D}{Point3D}}}]{lookfrom,  }\item[{\mbox{\hyperlink{classVector3D}{Point3D}}}]{lookat,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{vup }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classCamera}{Camera}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the camera \\
+\hline
+{\em aspect\+Ratio} & The aspect ratio of the camera \\
+\hline
+{\em samples\+Per\+Pix} & The number of samples per pixel \\
+\hline
+{\em max\+Depth} & The maximum depth of the camera \\
+\hline
+{\em vfov} & The vertical field of view of the camera \\
+\hline
+{\em lookfrom} & The look from point of the camera \\
+\hline
+{\em lookat} & The look at point of the camera \\
+\hline
+{\em vup} & The view up vector of the camera \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCamera_a4745dd6ab014b2abd1f3921630e4f978}\label{classCamera_a4745dd6ab014b2abd1f3921630e4f978}} 
+\index{Camera@{Camera}!defocusDiskSample@{defocusDiskSample}}
+\index{defocusDiskSample@{defocusDiskSample}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{defocusDiskSample()}{defocusDiskSample()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Point3D}} Camera\+::defocus\+Disk\+Sample (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get a sample from the defocus disk. 
+
+\begin{DoxyReturn}{Returns}
+Point3D The sample from the defocus disk 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_ac18dca818282f34c852fa7fc55a4ddb9}\label{classCamera_ac18dca818282f34c852fa7fc55a4ddb9}} 
+\index{Camera@{Camera}!generatePPM@{generatePPM}}
+\index{generatePPM@{generatePPM}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{generatePPM()}{generatePPM()}}
+{\footnotesize\ttfamily void Camera\+::generate\+PPM (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const \mbox{\hyperlink{classHittableList}{Hittable\+List}} \&}]{world }\end{DoxyParamCaption})}
+
+
+
+Generates a PPM file from the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to generate \\
+\hline
+{\em world} & The world to render \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_adaff4cef6521007bdf55a393a4adae32}\label{classCamera_adaff4cef6521007bdf55a393a4adae32}} 
+\index{Camera@{Camera}!getCenter@{getCenter}}
+\index{getCenter@{getCenter}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getCenter()}{getCenter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Point3D}} Camera\+::get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the center of the camera. 
+
+\begin{DoxyReturn}{Returns}
+Point3D The center of the camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a9accc646b9cdfa77eb19ea5123a55c23}\label{classCamera_a9accc646b9cdfa77eb19ea5123a55c23}} 
+\index{Camera@{Camera}!getRay@{getRay}}
+\index{getRay@{getRay}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getRay()}{getRay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRay}{Ray}} Camera\+::get\+Ray (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption}) const}
+
+
+
+Get a ray from the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The i value \\
+\hline
+{\em j} & The j value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classRay}{Ray}} The ray 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a4bb1f0682df5a376c5725bf2a55a8d70}\label{classCamera_a4bb1f0682df5a376c5725bf2a55a8d70}} 
+\index{Camera@{Camera}!hit@{hit}}
+\index{hit@{hit}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{hit()}{hit()}}
+{\footnotesize\ttfamily bool Camera\+::hit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{r,  }\item[{\mbox{\hyperlink{classInterval}{Interval}}}]{ray\+\_\+t,  }\item[{\mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&}]{rec }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if a ray hits the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The ray to check \\
+\hline
+{\em ray\+\_\+t} & The interval of the ray \\
+\hline
+{\em rec} & The hit record \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the ray hits the camera 
+
+false If the ray does not hit the camera 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classAObject}{AObject}}.
+
+\mbox{\Hypertarget{classCamera_ab965ba47361b11919c427af58635036e}\label{classCamera_ab965ba47361b11919c427af58635036e}} 
+\index{Camera@{Camera}!init@{init}}
+\index{init@{init}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Camera\+::init (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{double}]{aspect\+Ratio,  }\item[{int}]{samples\+Per\+Pix,  }\item[{int}]{max\+Depth,  }\item[{double}]{vfov,  }\item[{\mbox{\hyperlink{classVector3D}{Point3D}}}]{lookfrom,  }\item[{\mbox{\hyperlink{classVector3D}{Point3D}}}]{lookat,  }\item[{\mbox{\hyperlink{classVector3D}{Vector3D}}}]{vup }\end{DoxyParamCaption})}
+
+
+
+Initialize the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the camera \\
+\hline
+{\em aspect\+Ratio} & The aspect ratio of the camera \\
+\hline
+{\em samples\+Per\+Pix} & The number of samples per pixel \\
+\hline
+{\em max\+Depth} & The maximum depth of the camera \\
+\hline
+{\em vfov} & The vertical field of view of the camera \\
+\hline
+{\em lookfrom} & The look from point of the camera \\
+\hline
+{\em lookat} & The look at point of the camera \\
+\hline
+{\em vup} & The view up vector of the camera \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a6b50d9428ac023689d3aab4d95929fc6}\label{classCamera_a6b50d9428ac023689d3aab4d95929fc6}} 
+\index{Camera@{Camera}!linearToGamma@{linearToGamma}}
+\index{linearToGamma@{linearToGamma}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{linearToGamma()}{linearToGamma()}}
+{\footnotesize\ttfamily double Camera\+::linear\+To\+Gamma (\begin{DoxyParamCaption}\item[{double}]{linear\+\_\+component }\end{DoxyParamCaption})}
+
+
+
+Converts a linear color component to a gamma color component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear\+\_\+component} & The linear color component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The gamma color component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_afb1b536b0263a59a45c023bfad73723e}\label{classCamera_afb1b536b0263a59a45c023bfad73723e}} 
+\index{Camera@{Camera}!rayColor@{rayColor}}
+\index{rayColor@{rayColor}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{rayColor()}{rayColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Color}} Camera\+::ray\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{r,  }\item[{int}]{depth,  }\item[{const \mbox{\hyperlink{classHittableList}{Hittable\+List}} \&}]{world }\end{DoxyParamCaption}) const}
+
+
+
+Get the color of a ray. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The ray to get the color of \\
+\hline
+{\em depth} & The depth of the ray \\
+\hline
+{\em world} & The world to check for hits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Color The color of the ray 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a5beb7f0a3e6c4eb7b5f85f6444b6758c}\label{classCamera_a5beb7f0a3e6c4eb7b5f85f6444b6758c}} 
+\index{Camera@{Camera}!rayColorAttribute@{rayColorAttribute}}
+\index{rayColorAttribute@{rayColorAttribute}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{rayColorAttribute()}{rayColorAttribute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Color}} Camera\+::ray\+Color\+Attribute (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{r,  }\item[{const \mbox{\hyperlink{classIHittable}{IHittable}} \&}]{world }\end{DoxyParamCaption}) const}
+
+
+
+Get the color of a ray. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The ray to get the color of \\
+\hline
+{\em world} & The world to check for hits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Color The color of the ray 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a9b287087edc24fa8d3ff4112d867b6c3}\label{classCamera_a9b287087edc24fa8d3ff4112d867b6c3}} 
+\index{Camera@{Camera}!render@{render}}
+\index{render@{render}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Camera\+::render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classIHittable}{IHittable}} \&}]{world }\end{DoxyParamCaption})}
+
+
+
+Renders the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & The world to render \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCamera_a0c48ef97ee2ff7ae601837283d8b658f}\label{classCamera_a0c48ef97ee2ff7ae601837283d8b658f}} 
+\index{Camera@{Camera}!sampleSquare@{sampleSquare}}
+\index{sampleSquare@{sampleSquare}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{sampleSquare()}{sampleSquare()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Camera\+::sample\+Square (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Samples a square. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3D}{Vector3D}} The sampled square 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCamera_a45bbbf2a8ce2b9dad3790db78cb0b747}\label{classCamera_a45bbbf2a8ce2b9dad3790db78cb0b747}} 
+\index{Camera@{Camera}!writeColor@{writeColor}}
+\index{writeColor@{writeColor}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{writeColor()}{writeColor()}}
+{\footnotesize\ttfamily void Camera\+::write\+Color (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const \mbox{\hyperlink{classVector3D}{Color}} \&}]{pixel\+\_\+color }\end{DoxyParamCaption})}
+
+
+
+Writes a color to a stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The output stream \\
+\hline
+{\em pixel\+\_\+color} & The color to write \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/\+Objects/Camera.\+hpp\item 
+src/\+Objects/Camera.\+cpp\end{DoxyCompactItemize}

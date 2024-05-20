@@ -1,0 +1,51 @@
+\hypertarget{classAMaterial}{}\doxysection{AMaterial Class Reference}
+\label{classAMaterial}\index{AMaterial@{AMaterial}}
+
+
+Inheritance diagram for AMaterial\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAMaterial_ae3504d6018fa23ca5d19ebb845ccad1a}\label{classAMaterial_ae3504d6018fa23ca5d19ebb845ccad1a}} 
+\mbox{\hyperlink{classAMaterial_ae3504d6018fa23ca5d19ebb845ccad1a}{AMaterial}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classAMaterial}{AMaterial}} object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classAMaterial_a49a733aced2563bc37be0f4dd36f50e2}{scatter}} (const \mbox{\hyperlink{classRay}{Ray}} \&r\+\_\+in, const \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&rec, \mbox{\hyperlink{classVector3D}{Color}} \&attenuation, \mbox{\hyperlink{classRay}{Ray}} \&scattered) const
+\begin{DoxyCompactList}\small\item\em Determines if a ray scatters off the \mbox{\hyperlink{classAMaterial}{AMaterial}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAMaterial_a49a733aced2563bc37be0f4dd36f50e2}\label{classAMaterial_a49a733aced2563bc37be0f4dd36f50e2}} 
+\index{AMaterial@{AMaterial}!scatter@{scatter}}
+\index{scatter@{scatter}!AMaterial@{AMaterial}}
+\doxysubsubsection{\texorpdfstring{scatter()}{scatter()}}
+{\footnotesize\ttfamily bool AMaterial\+::scatter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{r\+\_\+in,  }\item[{const \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&}]{rec,  }\item[{\mbox{\hyperlink{classVector3D}{Color}} \&}]{attenuation,  }\item[{\mbox{\hyperlink{classRay}{Ray}} \&}]{scattered }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Determines if a ray scatters off the \mbox{\hyperlink{classAMaterial}{AMaterial}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r\+\_\+in} & The incoming ray \\
+\hline
+{\em rec} & The hit record containing details of the ray-\/object intersection \\
+\hline
+{\em attenuation} & The attenuation of the ray after scattering \\
+\hline
+{\em scattered} & The scattered ray after hitting the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false Always returns false in this base class implementation 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classMetal_afb1457e52f56d1051176502dc5380387}{Metal}}, \mbox{\hyperlink{classLambertian_af2f54a2313cbf3eeef9ae1d35013f6b2}{Lambertian}}, and \mbox{\hyperlink{classDielectric_aa4544b609ec9164fe0ac62238e2bb0e9}{Dielectric}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/AMaterial.\+hpp\item 
+src/AMaterial.\+cpp\end{DoxyCompactItemize}

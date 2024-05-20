@@ -1,0 +1,201 @@
+\hypertarget{classHitRecord}{}\doxysection{Hit\+Record Class Reference}
+\label{classHitRecord}\index{HitRecord@{HitRecord}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHitRecord_a84bd816eb5d9b83fc08258d6e9e36f49}\label{classHitRecord_a84bd816eb5d9b83fc08258d6e9e36f49}} 
+\mbox{\hyperlink{classHitRecord_a84bd816eb5d9b83fc08258d6e9e36f49}{Hit\+Record}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classHitRecord}{Hit\+Record}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHitRecord_a39acb918dd41e83ede16ecad0e1100b3}\label{classHitRecord_a39acb918dd41e83ede16ecad0e1100b3}} 
+\mbox{\hyperlink{classHitRecord_a39acb918dd41e83ede16ecad0e1100b3}{$\sim$\+Hit\+Record}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classHitRecord}{Hit\+Record}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Point3D}} \mbox{\hyperlink{classHitRecord_a73d998a17be8dbf7fe5c6da409d0c290}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get the Position of the hit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHitRecord_a839e48d575fdecde0abf132c3d088fa6}{set\+Position}} (const \mbox{\hyperlink{classVector3D}{Point3D}} pos)
+\begin{DoxyCompactList}\small\item\em Set the Position of the hit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3D}{Vector3D}} \mbox{\hyperlink{classHitRecord_abeab2010509da7d520e6a9783943910a}{get\+Normal}} () const
+\begin{DoxyCompactList}\small\item\em Get the Normal at the hit point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHitRecord_aae1fec7a72a120769c2e1a993b6ebec2}{set\+Normal}} (const \mbox{\hyperlink{classVector3D}{Vector3D}} normal)
+\begin{DoxyCompactList}\small\item\em Set the Normal at the hit point. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classHitRecord_a7aae55e86617809da7ef64d56222492b}{get\+Translation}} () const
+\begin{DoxyCompactList}\small\item\em Get the Translation of the hit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHitRecord_a45b9ff47eab6cf9985da2b70c764a817}{set\+Translation}} (const double translation)
+\begin{DoxyCompactList}\small\item\em Set the Translation of the hit. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classHitRecord_af056bd50f0203fd3ed5bd66c10d8581d}{get\+Front\+Face}} () const
+\begin{DoxyCompactList}\small\item\em Get the Front\+Face status of the hit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHitRecord_a897070311cc8d8cf165b5c3cb0d2b38f}{set\+Front\+Face}} (const bool front\+Face)
+\begin{DoxyCompactList}\small\item\em Set the Front\+Face status of the hit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHitRecord_ad4d090523b5cbc1e1e87805a0be1df60}{set\+Face\+Normal}} (const \mbox{\hyperlink{classRay}{Ray}} \&rayon, const \mbox{\hyperlink{classVector3D}{Vector3D}} \&outward\+\_\+normal)
+\begin{DoxyCompactList}\small\item\em Set the face normal of the hit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHitRecord_af1550f739c291b103b079ddf826515d2}{set\+Mat}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classAMaterial}{AMaterial}} $>$ mat)
+\begin{DoxyCompactList}\small\item\em Set the material of the hit. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classAMaterial}{AMaterial}} $>$ \mbox{\hyperlink{classHitRecord_a5d8e228c6e1bcf9786bfa7fd61854189}{get\+Mat}} () const
+\begin{DoxyCompactList}\small\item\em Get the material of the hit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHitRecord_af056bd50f0203fd3ed5bd66c10d8581d}\label{classHitRecord_af056bd50f0203fd3ed5bd66c10d8581d}} 
+\index{HitRecord@{HitRecord}!getFrontFace@{getFrontFace}}
+\index{getFrontFace@{getFrontFace}!HitRecord@{HitRecord}}
+\doxysubsubsection{\texorpdfstring{getFrontFace()}{getFrontFace()}}
+{\footnotesize\ttfamily bool Hit\+Record\+::get\+Front\+Face (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Front\+Face status of the hit. 
+
+\begin{DoxyReturn}{Returns}
+true If the hit was on the front face 
+
+false Otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHitRecord_a5d8e228c6e1bcf9786bfa7fd61854189}\label{classHitRecord_a5d8e228c6e1bcf9786bfa7fd61854189}} 
+\index{HitRecord@{HitRecord}!getMat@{getMat}}
+\index{getMat@{getMat}!HitRecord@{HitRecord}}
+\doxysubsubsection{\texorpdfstring{getMat()}{getMat()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classAMaterial}{AMaterial}} $>$ Hit\+Record\+::get\+Mat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the material of the hit. 
+
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$\+AMaterial$>$ The material of the hit 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHitRecord_abeab2010509da7d520e6a9783943910a}\label{classHitRecord_abeab2010509da7d520e6a9783943910a}} 
+\index{HitRecord@{HitRecord}!getNormal@{getNormal}}
+\index{getNormal@{getNormal}!HitRecord@{HitRecord}}
+\doxysubsubsection{\texorpdfstring{getNormal()}{getNormal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Vector3D}} Hit\+Record\+::get\+Normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Normal at the hit point. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3D}{Vector3D}} The normal vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHitRecord_a73d998a17be8dbf7fe5c6da409d0c290}\label{classHitRecord_a73d998a17be8dbf7fe5c6da409d0c290}} 
+\index{HitRecord@{HitRecord}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!HitRecord@{HitRecord}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3D}{Point3D}} Hit\+Record\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Position of the hit. 
+
+\begin{DoxyReturn}{Returns}
+Point3D The position of the hit 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHitRecord_a7aae55e86617809da7ef64d56222492b}\label{classHitRecord_a7aae55e86617809da7ef64d56222492b}} 
+\index{HitRecord@{HitRecord}!getTranslation@{getTranslation}}
+\index{getTranslation@{getTranslation}!HitRecord@{HitRecord}}
+\doxysubsubsection{\texorpdfstring{getTranslation()}{getTranslation()}}
+{\footnotesize\ttfamily double Hit\+Record\+::get\+Translation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Translation of the hit. 
+
+\begin{DoxyReturn}{Returns}
+double The translation value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHitRecord_ad4d090523b5cbc1e1e87805a0be1df60}\label{classHitRecord_ad4d090523b5cbc1e1e87805a0be1df60}} 
+\index{HitRecord@{HitRecord}!setFaceNormal@{setFaceNormal}}
+\index{setFaceNormal@{setFaceNormal}!HitRecord@{HitRecord}}
+\doxysubsubsection{\texorpdfstring{setFaceNormal()}{setFaceNormal()}}
+{\footnotesize\ttfamily void Hit\+Record\+::set\+Face\+Normal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{r,  }\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}} \&}]{outward\+\_\+normal }\end{DoxyParamCaption})}
+
+
+
+Set the face normal of the hit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The ray that hit the object \\
+\hline
+{\em outward\+\_\+normal} & The outward normal of the hit point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHitRecord_a897070311cc8d8cf165b5c3cb0d2b38f}\label{classHitRecord_a897070311cc8d8cf165b5c3cb0d2b38f}} 
+\index{HitRecord@{HitRecord}!setFrontFace@{setFrontFace}}
+\index{setFrontFace@{setFrontFace}!HitRecord@{HitRecord}}
+\doxysubsubsection{\texorpdfstring{setFrontFace()}{setFrontFace()}}
+{\footnotesize\ttfamily void Hit\+Record\+::set\+Front\+Face (\begin{DoxyParamCaption}\item[{const bool}]{ff }\end{DoxyParamCaption})}
+
+
+
+Set the Front\+Face status of the hit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ff} & The new front face status \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHitRecord_af1550f739c291b103b079ddf826515d2}\label{classHitRecord_af1550f739c291b103b079ddf826515d2}} 
+\index{HitRecord@{HitRecord}!setMat@{setMat}}
+\index{setMat@{setMat}!HitRecord@{HitRecord}}
+\doxysubsubsection{\texorpdfstring{setMat()}{setMat()}}
+{\footnotesize\ttfamily void Hit\+Record\+::set\+Mat (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classAMaterial}{AMaterial}} $>$}]{mat }\end{DoxyParamCaption})}
+
+
+
+Set the material of the hit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The new material \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHitRecord_aae1fec7a72a120769c2e1a993b6ebec2}\label{classHitRecord_aae1fec7a72a120769c2e1a993b6ebec2}} 
+\index{HitRecord@{HitRecord}!setNormal@{setNormal}}
+\index{setNormal@{setNormal}!HitRecord@{HitRecord}}
+\doxysubsubsection{\texorpdfstring{setNormal()}{setNormal()}}
+{\footnotesize\ttfamily void Hit\+Record\+::set\+Normal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Vector3D}}}]{normal }\end{DoxyParamCaption})}
+
+
+
+Set the Normal at the hit point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em normal} & The new normal vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHitRecord_a839e48d575fdecde0abf132c3d088fa6}\label{classHitRecord_a839e48d575fdecde0abf132c3d088fa6}} 
+\index{HitRecord@{HitRecord}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!HitRecord@{HitRecord}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Hit\+Record\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Point3D}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Set the Position of the hit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The new position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHitRecord_a45b9ff47eab6cf9985da2b70c764a817}\label{classHitRecord_a45b9ff47eab6cf9985da2b70c764a817}} 
+\index{HitRecord@{HitRecord}!setTranslation@{setTranslation}}
+\index{setTranslation@{setTranslation}!HitRecord@{HitRecord}}
+\doxysubsubsection{\texorpdfstring{setTranslation()}{setTranslation()}}
+{\footnotesize\ttfamily void Hit\+Record\+::set\+Translation (\begin{DoxyParamCaption}\item[{const double}]{translation }\end{DoxyParamCaption})}
+
+
+
+Set the Translation of the hit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation} & The new translation value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/Hit\+Record.\+hpp\item 
+src/Hit\+Record.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,171 @@
+\hypertarget{classParser}{}\doxysection{Parser Class Reference}
+\label{classParser}\index{Parser@{Parser}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParser_a12234f6cd36b61af4b50c94a179422c1}\label{classParser_a12234f6cd36b61af4b50c94a179422c1}} 
+\mbox{\hyperlink{classParser_a12234f6cd36b61af4b50c94a179422c1}{Parser}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classParser}{Parser}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParser_a3e658b5917a93a3ef648050d060e3a93}\label{classParser_a3e658b5917a93a3ef648050d060e3a93}} 
+\mbox{\hyperlink{classParser_a3e658b5917a93a3ef648050d060e3a93}{$\sim$\+Parser}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classParser}{Parser}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classParser_a12caa4b59b62a4809765e2a2e75feadd}{check\+Format}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Check if the file is in the correct format. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classParser_ae93c5ebc9209cbd6b6e59a211b2816c7}{is\+Empty}} (std\+::ifstream \&p\+File)
+\begin{DoxyCompactList}\small\item\em Check if the file is empty. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classParser_a663d198aa17d6aad8b3f133db3f3a1cf}{is\+In\+File}} (std\+::ifstream \&p\+File, const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Check if a string is in a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParser_aeeb65aa638864792c3816295d25dcf1a}{get\+Spheres}} (const libconfig\+::\+Setting \&spheres)
+\begin{DoxyCompactList}\small\item\em Get the Spheres object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParser_adaebd9e1d5b68de88885e48dc7abc718}{get\+Planes}} (const libconfig\+::\+Setting \&planes)
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classPlanes}{Planes}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParser_a88800feb4ceac16ed3a143ae001f85d4}{get\+Camera}} (const libconfig\+::\+Setting \&camera)
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classCamera}{Camera}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParser_aa9fa4a31eea66dca32f88a91f444feee}{parse\+File}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Parse the file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFactory}{Factory}} \& \mbox{\hyperlink{classParser_aaf44e951eff26f8f34b3f5ccaafc6954}{get\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classFactory}{Factory}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParser_a12caa4b59b62a4809765e2a2e75feadd}\label{classParser_a12caa4b59b62a4809765e2a2e75feadd}} 
+\index{Parser@{Parser}!checkFormat@{checkFormat}}
+\index{checkFormat@{checkFormat}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{checkFormat()}{checkFormat()}}
+{\footnotesize\ttfamily bool Parser\+::check\+Format (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+Check if the file is in the correct format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The name of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the file is in the correct format 
+
+false Otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParser_a88800feb4ceac16ed3a143ae001f85d4}\label{classParser_a88800feb4ceac16ed3a143ae001f85d4}} 
+\index{Parser@{Parser}!getCamera@{getCamera}}
+\index{getCamera@{getCamera}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{getCamera()}{getCamera()}}
+{\footnotesize\ttfamily void Parser\+::get\+Camera (\begin{DoxyParamCaption}\item[{const libconfig\+::\+Setting \&}]{camera }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classCamera}{Camera}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & The camera to get \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParser_aaf44e951eff26f8f34b3f5ccaafc6954}\label{classParser_aaf44e951eff26f8f34b3f5ccaafc6954}} 
+\index{Parser@{Parser}!getFactory@{getFactory}}
+\index{getFactory@{getFactory}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{getFactory()}{getFactory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFactory}{Factory}} \& Parser\+::get\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classFactory}{Factory}} object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classFactory}{Factory}}\& A reference to the factory object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParser_adaebd9e1d5b68de88885e48dc7abc718}\label{classParser_adaebd9e1d5b68de88885e48dc7abc718}} 
+\index{Parser@{Parser}!getPlanes@{getPlanes}}
+\index{getPlanes@{getPlanes}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{getPlanes()}{getPlanes()}}
+{\footnotesize\ttfamily void Parser\+::get\+Planes (\begin{DoxyParamCaption}\item[{const libconfig\+::\+Setting \&}]{planes }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classPlanes}{Planes}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em planes} & The planes to get \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParser_aeeb65aa638864792c3816295d25dcf1a}\label{classParser_aeeb65aa638864792c3816295d25dcf1a}} 
+\index{Parser@{Parser}!getSpheres@{getSpheres}}
+\index{getSpheres@{getSpheres}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{getSpheres()}{getSpheres()}}
+{\footnotesize\ttfamily void Parser\+::get\+Spheres (\begin{DoxyParamCaption}\item[{const libconfig\+::\+Setting \&}]{spheres }\end{DoxyParamCaption})}
+
+
+
+Get the Spheres object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spheres} & The spheres to get \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParser_ae93c5ebc9209cbd6b6e59a211b2816c7}\label{classParser_ae93c5ebc9209cbd6b6e59a211b2816c7}} 
+\index{Parser@{Parser}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Parser\+::is\+Empty (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{p\+File }\end{DoxyParamCaption})}
+
+
+
+Check if the file is empty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+File} & The file to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the file is empty 
+
+false Otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParser_a663d198aa17d6aad8b3f133db3f3a1cf}\label{classParser_a663d198aa17d6aad8b3f133db3f3a1cf}} 
+\index{Parser@{Parser}!isInFile@{isInFile}}
+\index{isInFile@{isInFile}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{isInFile()}{isInFile()}}
+{\footnotesize\ttfamily bool Parser\+::is\+In\+File (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{p\+File,  }\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+Check if a string is in a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+File} & The file to check \\
+\hline
+{\em str} & The string to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the string is in the file 
+
+false Otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParser_aa9fa4a31eea66dca32f88a91f444feee}\label{classParser_aa9fa4a31eea66dca32f88a91f444feee}} 
+\index{Parser@{Parser}!parseFile@{parseFile}}
+\index{parseFile@{parseFile}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{parseFile()}{parseFile()}}
+{\footnotesize\ttfamily void Parser\+::parse\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Parse the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to parse \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/Parser.\+hpp\item 
+src/Parser.\+cpp\end{DoxyCompactItemize}

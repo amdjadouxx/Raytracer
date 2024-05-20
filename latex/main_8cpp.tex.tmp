@@ -1,0 +1,56 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Main entry point for the Ray Tracer program.  
+
+
+{\ttfamily \#include \char`\"{}Parser.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Ray.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Vector3\+D.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Hittable\+List.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Sphere.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Planes.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Camera.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include \char`\"{}IHittable.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Factory.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a0c99d968a34e803d378692bde2e3f18f}{main}} (int ac, char $\ast$$\ast$av)
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main entry point for the Ray Tracer program. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a0c99d968a34e803d378692bde2e3f18f}\label{main_8cpp_a0c99d968a34e803d378692bde2e3f18f}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{ac,  }\item[{char $\ast$$\ast$}]{av }\end{DoxyParamCaption})}
+
+
+
+Main function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ac} & Argument count \\
+\hline
+{\em av} & Argument vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Exit status
+\end{DoxyReturn}
+The main function checks the command line arguments, parses the input file, generates the world of hittable objects, sets up the camera, and generates the final image. 

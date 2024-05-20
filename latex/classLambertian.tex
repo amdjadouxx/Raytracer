@@ -1,0 +1,73 @@
+\hypertarget{classLambertian}{}\doxysection{Lambertian Class Reference}
+\label{classLambertian}\index{Lambertian@{Lambertian}}
+
+
+Inheritance diagram for Lambertian\+:
+% FIG 0
+
+
+Collaboration diagram for Lambertian\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLambertian_a3854427b5e02fa3da375dc10057a5acf}{Lambertian}} (const \mbox{\hyperlink{classVector3D}{Color}} \&albedo)
+\begin{DoxyCompactList}\small\item\em Get the Refraction Index of the dielectric material. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLambertian_ae8ac1f1c9c93e496a88e86b51c286b6f}\label{classLambertian_ae8ac1f1c9c93e496a88e86b51c286b6f}} 
+\mbox{\hyperlink{classLambertian_ae8ac1f1c9c93e496a88e86b51c286b6f}{$\sim$\+Lambertian}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classLambertian}{Lambertian}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLambertian_af2f54a2313cbf3eeef9ae1d35013f6b2}{scatter}} (const \mbox{\hyperlink{classRay}{Ray}} \&r\+\_\+in, const \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&rec, \mbox{\hyperlink{classVector3D}{Color}} \&attenuation, \mbox{\hyperlink{classRay}{Ray}} \&scattered) const override
+\begin{DoxyCompactList}\small\item\em Determines how a ray scatters when it hits this \mbox{\hyperlink{classLambertian}{Lambertian}} material. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLambertian_a3854427b5e02fa3da375dc10057a5acf}\label{classLambertian_a3854427b5e02fa3da375dc10057a5acf}} 
+\index{Lambertian@{Lambertian}!Lambertian@{Lambertian}}
+\index{Lambertian@{Lambertian}!Lambertian@{Lambertian}}
+\doxysubsubsection{\texorpdfstring{Lambertian()}{Lambertian()}}
+{\footnotesize\ttfamily Lambertian\+::\+Lambertian (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Color}} \&}]{albedo }\end{DoxyParamCaption})}
+
+
+
+Get the Refraction Index of the dielectric material. 
+
+\begin{DoxyReturn}{Returns}
+double The refraction index 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLambertian_af2f54a2313cbf3eeef9ae1d35013f6b2}\label{classLambertian_af2f54a2313cbf3eeef9ae1d35013f6b2}} 
+\index{Lambertian@{Lambertian}!scatter@{scatter}}
+\index{scatter@{scatter}!Lambertian@{Lambertian}}
+\doxysubsubsection{\texorpdfstring{scatter()}{scatter()}}
+{\footnotesize\ttfamily bool Lambertian\+::scatter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{r\+\_\+in,  }\item[{const \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&}]{rec,  }\item[{\mbox{\hyperlink{classVector3D}{Color}} \&}]{attenuation,  }\item[{\mbox{\hyperlink{classRay}{Ray}} \&}]{scattered }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Determines how a ray scatters when it hits this \mbox{\hyperlink{classLambertian}{Lambertian}} material. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r\+\_\+in} & The incoming ray \\
+\hline
+{\em rec} & The hit record containing details of the ray-\/object intersection \\
+\hline
+{\em attenuation} & The amount by which the ray\textquotesingle{}s intensity is reduced \\
+\hline
+{\em scattered} & The scattered ray after hitting the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Always returns true indicating that scattering always occurs 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAMaterial_a49a733aced2563bc37be0f4dd36f50e2}{AMaterial}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/\+Materials/Lambertian.\+hpp\item 
+src/\+Materials/Lambertian.\+cpp\end{DoxyCompactItemize}

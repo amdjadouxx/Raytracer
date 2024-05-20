@@ -1,0 +1,79 @@
+\hypertarget{classMetal}{}\doxysection{Metal Class Reference}
+\label{classMetal}\index{Metal@{Metal}}
+
+
+Inheritance diagram for Metal\+:
+% FIG 0
+
+
+Collaboration diagram for Metal\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMetal_a217be9e20b822358e3a324e30fa8caef}{Metal}} (const \mbox{\hyperlink{classVector3D}{Color}} \&albedo, double fuzz)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classMetal}{Metal}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMetal_a920bace7a5ac67060ac5b3435c045fe6}\label{classMetal_a920bace7a5ac67060ac5b3435c045fe6}} 
+\mbox{\hyperlink{classMetal_a920bace7a5ac67060ac5b3435c045fe6}{$\sim$\+Metal}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classMetal}{Metal}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMetal_afb1457e52f56d1051176502dc5380387}{scatter}} (const \mbox{\hyperlink{classRay}{Ray}} \&r\+\_\+in, const \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&rec, \mbox{\hyperlink{classVector3D}{Color}} \&attenuation, \mbox{\hyperlink{classRay}{Ray}} \&scattered) const override
+\begin{DoxyCompactList}\small\item\em Determines if a ray scatters off the \mbox{\hyperlink{classMetal}{Metal}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMetal_a217be9e20b822358e3a324e30fa8caef}\label{classMetal_a217be9e20b822358e3a324e30fa8caef}} 
+\index{Metal@{Metal}!Metal@{Metal}}
+\index{Metal@{Metal}!Metal@{Metal}}
+\doxysubsubsection{\texorpdfstring{Metal()}{Metal()}}
+{\footnotesize\ttfamily Metal\+::\+Metal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Color}} \&}]{albedo,  }\item[{double}]{fuzz }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classMetal}{Metal}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em albedo} & The color of the \mbox{\hyperlink{classMetal}{Metal}} object \\
+\hline
+{\em fuzz} & The fuzziness of the \mbox{\hyperlink{classMetal}{Metal}} object, capped at 1 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMetal_afb1457e52f56d1051176502dc5380387}\label{classMetal_afb1457e52f56d1051176502dc5380387}} 
+\index{Metal@{Metal}!scatter@{scatter}}
+\index{scatter@{scatter}!Metal@{Metal}}
+\doxysubsubsection{\texorpdfstring{scatter()}{scatter()}}
+{\footnotesize\ttfamily bool Metal\+::scatter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{r\+\_\+in,  }\item[{const \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&}]{rec,  }\item[{\mbox{\hyperlink{classVector3D}{Color}} \&}]{attenuation,  }\item[{\mbox{\hyperlink{classRay}{Ray}} \&}]{scattered }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Determines if a ray scatters off the \mbox{\hyperlink{classMetal}{Metal}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r\+\_\+in} & The incoming ray \\
+\hline
+{\em rec} & The hit record containing details of the ray-\/object intersection \\
+\hline
+{\em attenuation} & The attenuation of the ray after scattering \\
+\hline
+{\em scattered} & The scattered ray after hitting the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the ray scatters (i.\+e., the angle between the scattered ray and the normal is greater than 0) 
+
+false Otherwise 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAMaterial_a49a733aced2563bc37be0f4dd36f50e2}{AMaterial}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/\+Materials/Metal.\+hpp\item 
+src/\+Materials/Metal.\+cpp\end{DoxyCompactItemize}

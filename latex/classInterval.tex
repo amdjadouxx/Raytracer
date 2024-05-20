@@ -1,0 +1,182 @@
+\hypertarget{classInterval}{}\doxysection{Interval Class Reference}
+\label{classInterval}\index{Interval@{Interval}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classInterval_ae48b9a9e9f672f81977627b609e32429}\label{classInterval_ae48b9a9e9f672f81977627b609e32429}} 
+\mbox{\hyperlink{classInterval_ae48b9a9e9f672f81977627b609e32429}{Interval}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classInterval}{Interval}} object with default min and max values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInterval_ab0a8f191fb00803d529902f85524e4e2}{Interval}} (double min, double max)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classInterval}{Interval}} object with specified min and max values. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classInterval_a8548b542dd134409d5d60601896b0eab}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the size of the interval. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInterval_a21b0af7ddfec2f8b0356b0d24a40241f}{is\+In}} (double x) const
+\begin{DoxyCompactList}\small\item\em Check if a value is within the interval. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classInterval_a2bae0164c33bfa542339421f308496c7}{srds}} (double x) const
+\begin{DoxyCompactList}\small\item\em Check if a value is strictly within the interval. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classInterval_a6e031dc592ee3bdf4c5048fb99630b7b}{clmp}} (double x) const
+\begin{DoxyCompactList}\small\item\em Clamp a value to the interval. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classInterval_ac899eee4bd4a58aff49b7f66f0faa0af}{get\+Min}} () const
+\begin{DoxyCompactList}\small\item\em Get the minimum value of the interval. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classInterval_a9a7833a07e551193309a13271c6e18ff}{get\+Max}} () const
+\begin{DoxyCompactList}\small\item\em Get the maximum value of the interval. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInterval_ad57edc4b88154a5cc4854c224ca8855a}{set\+Min}} (double min)
+\begin{DoxyCompactList}\small\item\em Set the minimum value of the interval. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInterval_a1ed5d7070ec6bf5cd98e89b7fe2fcfe2}{set\+Max}} (double max)
+\begin{DoxyCompactList}\small\item\em Set the maximum value of the interval. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classInterval_ab0a8f191fb00803d529902f85524e4e2}\label{classInterval_ab0a8f191fb00803d529902f85524e4e2}} 
+\index{Interval@{Interval}!Interval@{Interval}}
+\index{Interval@{Interval}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{Interval()}{Interval()}}
+{\footnotesize\ttfamily Interval\+::\+Interval (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classInterval}{Interval}} object with specified min and max values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The minimum value of the interval \\
+\hline
+{\em max} & The maximum value of the interval \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInterval_a6e031dc592ee3bdf4c5048fb99630b7b}\label{classInterval_a6e031dc592ee3bdf4c5048fb99630b7b}} 
+\index{Interval@{Interval}!clmp@{clmp}}
+\index{clmp@{clmp}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{clmp()}{clmp()}}
+{\footnotesize\ttfamily double Interval\+::clmp (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption}) const}
+
+
+
+Clamp a value to the interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The value to clamp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The clamped value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterval_a9a7833a07e551193309a13271c6e18ff}\label{classInterval_a9a7833a07e551193309a13271c6e18ff}} 
+\index{Interval@{Interval}!getMax@{getMax}}
+\index{getMax@{getMax}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{getMax()}{getMax()}}
+{\footnotesize\ttfamily double Interval\+::get\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the maximum value of the interval. 
+
+\begin{DoxyReturn}{Returns}
+double The maximum value of the interval 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterval_ac899eee4bd4a58aff49b7f66f0faa0af}\label{classInterval_ac899eee4bd4a58aff49b7f66f0faa0af}} 
+\index{Interval@{Interval}!getMin@{getMin}}
+\index{getMin@{getMin}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{getMin()}{getMin()}}
+{\footnotesize\ttfamily double Interval\+::get\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the minimum value of the interval. 
+
+\begin{DoxyReturn}{Returns}
+double The minimum value of the interval 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterval_a8548b542dd134409d5d60601896b0eab}\label{classInterval_a8548b542dd134409d5d60601896b0eab}} 
+\index{Interval@{Interval}!getSize@{getSize}}
+\index{getSize@{getSize}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily double Interval\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the size of the interval. 
+
+\begin{DoxyReturn}{Returns}
+double The size of the interval 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterval_a21b0af7ddfec2f8b0356b0d24a40241f}\label{classInterval_a21b0af7ddfec2f8b0356b0d24a40241f}} 
+\index{Interval@{Interval}!isIn@{isIn}}
+\index{isIn@{isIn}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{isIn()}{isIn()}}
+{\footnotesize\ttfamily bool Interval\+::is\+In (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption}) const}
+
+
+
+Check if a value is within the interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The value to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the value is within the interval 
+
+false Otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInterval_a1ed5d7070ec6bf5cd98e89b7fe2fcfe2}\label{classInterval_a1ed5d7070ec6bf5cd98e89b7fe2fcfe2}} 
+\index{Interval@{Interval}!setMax@{setMax}}
+\index{setMax@{setMax}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{setMax()}{setMax()}}
+{\footnotesize\ttfamily void Interval\+::set\+Max (\begin{DoxyParamCaption}\item[{double}]{max }\end{DoxyParamCaption})}
+
+
+
+Set the maximum value of the interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & The new maximum value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInterval_ad57edc4b88154a5cc4854c224ca8855a}\label{classInterval_ad57edc4b88154a5cc4854c224ca8855a}} 
+\index{Interval@{Interval}!setMin@{setMin}}
+\index{setMin@{setMin}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{setMin()}{setMin()}}
+{\footnotesize\ttfamily void Interval\+::set\+Min (\begin{DoxyParamCaption}\item[{double}]{min }\end{DoxyParamCaption})}
+
+
+
+Set the minimum value of the interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The new minimum value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInterval_a2bae0164c33bfa542339421f308496c7}\label{classInterval_a2bae0164c33bfa542339421f308496c7}} 
+\index{Interval@{Interval}!srds@{srds}}
+\index{srds@{srds}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{srds()}{srds()}}
+{\footnotesize\ttfamily bool Interval\+::srds (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption}) const}
+
+
+
+Check if a value is strictly within the interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The value to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the value is strictly within the interval 
+
+false Otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/Interval.\+hpp\item 
+src/Interval.\+cpp\end{DoxyCompactItemize}

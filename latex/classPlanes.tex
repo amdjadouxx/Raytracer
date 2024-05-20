@@ -1,0 +1,66 @@
+\hypertarget{classPlanes}{}\doxysection{Planes Class Reference}
+\label{classPlanes}\index{Planes@{Planes}}
+
+
+Inheritance diagram for Planes\+:
+% FIG 0
+
+
+Collaboration diagram for Planes\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlanes_a54db47740a43c5e9a5172976aa33bd7a}{Planes}} (const \mbox{\hyperlink{classVector3D}{Point3D}} \&center, double radius)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classPlanes}{Planes}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlanes_a90f33dfa0557823a71a284b5b19330ec}\label{classPlanes_a90f33dfa0557823a71a284b5b19330ec}} 
+\mbox{\hyperlink{classPlanes_a90f33dfa0557823a71a284b5b19330ec}{$\sim$\+Planes}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classPlanes}{Planes}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPlanes_a10fcc6cca8e32badd1d79a76b4997710}{hit}} (const \mbox{\hyperlink{classRay}{Ray}} \&r, \mbox{\hyperlink{classInterval}{Interval}} ray\+\_\+t, \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&rec) const override
+\begin{DoxyCompactList}\small\item\em Get the center of the plane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlanes_a54db47740a43c5e9a5172976aa33bd7a}\label{classPlanes_a54db47740a43c5e9a5172976aa33bd7a}} 
+\index{Planes@{Planes}!Planes@{Planes}}
+\index{Planes@{Planes}!Planes@{Planes}}
+\doxysubsubsection{\texorpdfstring{Planes()}{Planes()}}
+{\footnotesize\ttfamily Planes\+::\+Planes (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Point3D}} \&}]{center,  }\item[{double}]{radius }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classPlanes}{Planes}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & The center of the plane \\
+\hline
+{\em radius} & The radius of the plane \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlanes_a10fcc6cca8e32badd1d79a76b4997710}\label{classPlanes_a10fcc6cca8e32badd1d79a76b4997710}} 
+\index{Planes@{Planes}!hit@{hit}}
+\index{hit@{hit}!Planes@{Planes}}
+\doxysubsubsection{\texorpdfstring{hit()}{hit()}}
+{\footnotesize\ttfamily bool Planes\+::hit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{r,  }\item[{\mbox{\hyperlink{classInterval}{Interval}}}]{ray\+\_\+t,  }\item[{\mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&}]{rec }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the center of the plane. 
+
+\begin{DoxyReturn}{Returns}
+Point3D The center of the plane 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classAObject}{AObject}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/\+Objects/Planes.\+hpp\item 
+src/\+Objects/Planes.\+cpp\end{DoxyCompactItemize}

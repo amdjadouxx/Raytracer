@@ -1,0 +1,135 @@
+\hypertarget{classFactory}{}\doxysection{Factory Class Reference}
+\label{classFactory}\index{Factory@{Factory}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFactory_a2a9eb020487d2dfe25d652e7ae96c9be}\label{classFactory_a2a9eb020487d2dfe25d652e7ae96c9be}} 
+using {\bfseries Component\+Creator\+Func} = std\+::function$<$ void(std\+::any)$>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFactory_ac792bf88cfb7b6804b479529da5308cc}\label{classFactory_ac792bf88cfb7b6804b479529da5308cc}} 
+\mbox{\hyperlink{classFactory_ac792bf88cfb7b6804b479529da5308cc}{Factory}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classFactory}{Factory}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFactory_a8f71456f48e4df402c778a44191ff40e}\label{classFactory_a8f71456f48e4df402c778a44191ff40e}} 
+\mbox{\hyperlink{classFactory_a8f71456f48e4df402c778a44191ff40e}{$\sim$\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classFactory}{Factory}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFactory_a60ae79dd5722c0ae13a8584ab62f7f10}{create\+Component}} (std\+::string type, std\+::any arg=std\+::any())
+\begin{DoxyCompactList}\small\item\em Create a component object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFactory_a8caf438bd6cca8c48eacc5d8014deea3}{create\+\_\+sphere}} (std\+::any arg)
+\begin{DoxyCompactList}\small\item\em Create a sphere object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFactory_a5180e78944b72ec0475f868033336713}{create\+\_\+planes}} (std\+::any arg)
+\begin{DoxyCompactList}\small\item\em Create a planes object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFactory_a48482ec4724ad0b2c8caa5a988e4d659}{create\+\_\+camera}} (std\+::any arg)
+\begin{DoxyCompactList}\small\item\em Create a camera object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFactory_a030504171bdd3ea0b72f4cd918ceca08}\label{classFactory_a030504171bdd3ea0b72f4cd918ceca08}} 
+void \mbox{\hyperlink{classFactory_a030504171bdd3ea0b72f4cd918ceca08}{initialize\+Component\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the component map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHittableList}{Hittable\+List}} \& \mbox{\hyperlink{classFactory_a55137aaab0b9a7a5e98013992af57d85}{get\+World}} ()
+\begin{DoxyCompactList}\small\item\em Get the World object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCamera}{Camera}} \& \mbox{\hyperlink{classFactory_a3047ea9e281de04fb8316a15a078cdf1}{get\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classCamera}{Camera}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFactory_a19fa1b29030d58b793c9e4a817a661bf}\label{classFactory_a19fa1b29030d58b793c9e4a817a661bf}} 
+std\+::unordered\+\_\+map$<$ std\+::string, Component\+Creator\+Func $>$ {\bfseries component\+Map\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFactory_a48482ec4724ad0b2c8caa5a988e4d659}\label{classFactory_a48482ec4724ad0b2c8caa5a988e4d659}} 
+\index{Factory@{Factory}!create\_camera@{create\_camera}}
+\index{create\_camera@{create\_camera}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{create\_camera()}{create\_camera()}}
+{\footnotesize\ttfamily void Factory\+::create\+\_\+camera (\begin{DoxyParamCaption}\item[{std\+::any}]{arg }\end{DoxyParamCaption})}
+
+
+
+Create a camera object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & A tuple containing the parameters for the camera \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFactory_a5180e78944b72ec0475f868033336713}\label{classFactory_a5180e78944b72ec0475f868033336713}} 
+\index{Factory@{Factory}!create\_planes@{create\_planes}}
+\index{create\_planes@{create\_planes}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{create\_planes()}{create\_planes()}}
+{\footnotesize\ttfamily void Factory\+::create\+\_\+planes (\begin{DoxyParamCaption}\item[{std\+::any}]{arg }\end{DoxyParamCaption})}
+
+
+
+Create a planes object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & A tuple containing the parameters for the plane \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFactory_a8caf438bd6cca8c48eacc5d8014deea3}\label{classFactory_a8caf438bd6cca8c48eacc5d8014deea3}} 
+\index{Factory@{Factory}!create\_sphere@{create\_sphere}}
+\index{create\_sphere@{create\_sphere}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{create\_sphere()}{create\_sphere()}}
+{\footnotesize\ttfamily void Factory\+::create\+\_\+sphere (\begin{DoxyParamCaption}\item[{std\+::any}]{arg }\end{DoxyParamCaption})}
+
+
+
+Create a sphere object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & A tuple containing the parameters for the sphere \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFactory_a60ae79dd5722c0ae13a8584ab62f7f10}\label{classFactory_a60ae79dd5722c0ae13a8584ab62f7f10}} 
+\index{Factory@{Factory}!createComponent@{createComponent}}
+\index{createComponent@{createComponent}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{createComponent()}{createComponent()}}
+{\footnotesize\ttfamily void Factory\+::create\+Component (\begin{DoxyParamCaption}\item[{std\+::string}]{type,  }\item[{std\+::any}]{arg = {\ttfamily std\+:\+:any()} }\end{DoxyParamCaption})}
+
+
+
+Create a component object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the component to create \\
+\hline
+{\em arg} & The parameters for the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFactory_a3047ea9e281de04fb8316a15a078cdf1}\label{classFactory_a3047ea9e281de04fb8316a15a078cdf1}} 
+\index{Factory@{Factory}!getCamera@{getCamera}}
+\index{getCamera@{getCamera}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{getCamera()}{getCamera()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCamera}{Camera}} \& Factory\+::get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{classCamera}{Camera}} object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classCamera}{Camera}}\& A reference to the camera object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFactory_a55137aaab0b9a7a5e98013992af57d85}\label{classFactory_a55137aaab0b9a7a5e98013992af57d85}} 
+\index{Factory@{Factory}!getWorld@{getWorld}}
+\index{getWorld@{getWorld}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{getWorld()}{getWorld()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHittableList}{Hittable\+List}} \& Factory\+::get\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the World object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classHittableList}{Hittable\+List}}\& A reference to the world object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/Factory.\+hpp\item 
+src/Factory.\+cpp\end{DoxyCompactItemize}

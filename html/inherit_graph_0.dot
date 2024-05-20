@@ -1,0 +1,18 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node5 [label="std::exception",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="AException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAException.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="CannotOpenFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCannotOpenFile.html",tooltip=" "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="FileIsEmpty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFileIsEmpty.html",tooltip=" "];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NoCameraInFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNoCameraInFile.html",tooltip=" "];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TypeofFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTypeofFile.html",tooltip=" "];
+}

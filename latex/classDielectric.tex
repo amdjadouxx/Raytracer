@@ -1,0 +1,87 @@
+\hypertarget{classDielectric}{}\doxysection{Dielectric Class Reference}
+\label{classDielectric}\index{Dielectric@{Dielectric}}
+
+
+Inheritance diagram for Dielectric\+:
+% FIG 0
+
+
+Collaboration diagram for Dielectric\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDielectric_a81f29c0258c085b570bde29ab07d32c6}{Dielectric}} (double refraction\+Index)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classDielectric}{Dielectric}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDielectric_aa4544b609ec9164fe0ac62238e2bb0e9}{scatter}} (const \mbox{\hyperlink{classRay}{Ray}} \&r\+\_\+in, const \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&rec, \mbox{\hyperlink{classVector3D}{Color}} \&attenuation, \mbox{\hyperlink{classRay}{Ray}} \&scattered) const override
+\begin{DoxyCompactList}\small\item\em Determines how a ray scatters when it hits this dielectric material. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDielectric_a4855e755f70c9549a9af4d61be9110a9}{get\+Refraction\+Index}} () const
+\begin{DoxyCompactList}\small\item\em Get the Refraction Index of the dielectric material. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDielectric_a81f29c0258c085b570bde29ab07d32c6}\label{classDielectric_a81f29c0258c085b570bde29ab07d32c6}} 
+\index{Dielectric@{Dielectric}!Dielectric@{Dielectric}}
+\index{Dielectric@{Dielectric}!Dielectric@{Dielectric}}
+\doxysubsubsection{\texorpdfstring{Dielectric()}{Dielectric()}}
+{\footnotesize\ttfamily Dielectric\+::\+Dielectric (\begin{DoxyParamCaption}\item[{double}]{refraction\+Index }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classDielectric}{Dielectric}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em refraction\+Index} & The refraction index of the dielectric material \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDielectric_a4855e755f70c9549a9af4d61be9110a9}\label{classDielectric_a4855e755f70c9549a9af4d61be9110a9}} 
+\index{Dielectric@{Dielectric}!getRefractionIndex@{getRefractionIndex}}
+\index{getRefractionIndex@{getRefractionIndex}!Dielectric@{Dielectric}}
+\doxysubsubsection{\texorpdfstring{getRefractionIndex()}{getRefractionIndex()}}
+{\footnotesize\ttfamily double Dielectric\+::get\+Refraction\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Refraction Index of the dielectric material. 
+
+\begin{DoxyReturn}{Returns}
+double The refraction index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDielectric_aa4544b609ec9164fe0ac62238e2bb0e9}\label{classDielectric_aa4544b609ec9164fe0ac62238e2bb0e9}} 
+\index{Dielectric@{Dielectric}!scatter@{scatter}}
+\index{scatter@{scatter}!Dielectric@{Dielectric}}
+\doxysubsubsection{\texorpdfstring{scatter()}{scatter()}}
+{\footnotesize\ttfamily bool Dielectric\+::scatter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{r\+\_\+in,  }\item[{const \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&}]{rec,  }\item[{\mbox{\hyperlink{classVector3D}{Color}} \&}]{attenuation,  }\item[{\mbox{\hyperlink{classRay}{Ray}} \&}]{scattered }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Determines how a ray scatters when it hits this dielectric material. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r\+\_\+in} & The incoming ray \\
+\hline
+{\em rec} & The hit record containing details of the ray-\/object intersection \\
+\hline
+{\em attenuation} & The amount by which the ray\textquotesingle{}s intensity is reduced \\
+\hline
+{\em scattered} & The scattered ray after hitting the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Always returns true indicating that scattering always occurs 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAMaterial_a49a733aced2563bc37be0f4dd36f50e2}{AMaterial}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/\+Materials/Dielectric.\+hpp\item 
+src/\+Materials/\mbox{\hyperlink{Dielectric_8cpp}{Dielectric.\+cpp}}\end{DoxyCompactItemize}

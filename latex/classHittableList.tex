@@ -1,0 +1,110 @@
+\hypertarget{classHittableList}{}\doxysection{Hittable\+List Class Reference}
+\label{classHittableList}\index{HittableList@{HittableList}}
+
+
+Inheritance diagram for Hittable\+List\+:
+% FIG 0
+
+
+Collaboration diagram for Hittable\+List\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHittableList_a7a86a0080d924904ba3f0b91969241b6}\label{classHittableList_a7a86a0080d924904ba3f0b91969241b6}} 
+\mbox{\hyperlink{classHittableList_a7a86a0080d924904ba3f0b91969241b6}{Hittable\+List}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classHittableList}{Hittable\+List}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHittableList_ab5b6bfe8f7ab51916ed68bcb28394493}{Hittable\+List}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIHittable}{IHittable}} $>$ object)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classHittableList}{Hittable\+List}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHittableList_abd9d6880bd50d06b5753fb81f8a48f9c}\label{classHittableList_abd9d6880bd50d06b5753fb81f8a48f9c}} 
+void \mbox{\hyperlink{classHittableList_abd9d6880bd50d06b5753fb81f8a48f9c}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the list of hittable objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHittableList_aaa000529dbaeb089aface1065283d7e3}{add}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIHittable}{IHittable}} $>$ object)
+\begin{DoxyCompactList}\small\item\em Add a hittable object to the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classHittableList_a4267997b6f2674b3cf06a9606a077e2c}{hit}} (const \mbox{\hyperlink{classRay}{Ray}} \&r, \mbox{\hyperlink{classInterval}{Interval}} ray\+\_\+t, \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&rec) const override
+\begin{DoxyCompactList}\small\item\em Determine if a ray hits any object in the list. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIHittable}{IHittable}} $>$ $>$ \mbox{\hyperlink{classHittableList_a5e6c74c717c1561ebfbebe2ce920f7dc}{get\+Objects}} () const
+\begin{DoxyCompactList}\small\item\em Get the list of hittable objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHittableList_ab5b6bfe8f7ab51916ed68bcb28394493}\label{classHittableList_ab5b6bfe8f7ab51916ed68bcb28394493}} 
+\index{HittableList@{HittableList}!HittableList@{HittableList}}
+\index{HittableList@{HittableList}!HittableList@{HittableList}}
+\doxysubsubsection{\texorpdfstring{HittableList()}{HittableList()}}
+{\footnotesize\ttfamily Hittable\+List\+::\+Hittable\+List (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIHittable}{IHittable}} $>$}]{object }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classHittableList}{Hittable\+List}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & A shared pointer to an \mbox{\hyperlink{classIHittable}{IHittable}} object to be added to the list \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHittableList_aaa000529dbaeb089aface1065283d7e3}\label{classHittableList_aaa000529dbaeb089aface1065283d7e3}} 
+\index{HittableList@{HittableList}!add@{add}}
+\index{add@{add}!HittableList@{HittableList}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Hittable\+List\+::add (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIHittable}{IHittable}} $>$}]{object }\end{DoxyParamCaption})}
+
+
+
+Add a hittable object to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & A shared pointer to an \mbox{\hyperlink{classIHittable}{IHittable}} object to be added to the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHittableList_a5e6c74c717c1561ebfbebe2ce920f7dc}\label{classHittableList_a5e6c74c717c1561ebfbebe2ce920f7dc}} 
+\index{HittableList@{HittableList}!getObjects@{getObjects}}
+\index{getObjects@{getObjects}!HittableList@{HittableList}}
+\doxysubsubsection{\texorpdfstring{getObjects()}{getObjects()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIHittable}{IHittable}} $>$ $>$ Hittable\+List\+::get\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the list of hittable objects. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::shared\+\_\+ptr$<$\+IHittable$>$$>$ The list of hittable objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHittableList_a4267997b6f2674b3cf06a9606a077e2c}\label{classHittableList_a4267997b6f2674b3cf06a9606a077e2c}} 
+\index{HittableList@{HittableList}!hit@{hit}}
+\index{hit@{hit}!HittableList@{HittableList}}
+\doxysubsubsection{\texorpdfstring{hit()}{hit()}}
+{\footnotesize\ttfamily bool Hittable\+List\+::hit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{r,  }\item[{\mbox{\hyperlink{classInterval}{Interval}}}]{ray\+\_\+t,  }\item[{\mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&}]{rec }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Determine if a ray hits any object in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The ray to test \\
+\hline
+{\em ray\+\_\+t} & The interval of the ray to test \\
+\hline
+{\em rec} & The hit record to fill with hit details \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the ray hits any object 
+
+false Otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIHittable}{IHittable}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/Hittable\+List.\+hpp\item 
+src/Hittable\+List.\+cpp\end{DoxyCompactItemize}

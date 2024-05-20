@@ -1,0 +1,79 @@
+\hypertarget{classSphere}{}\doxysection{Sphere Class Reference}
+\label{classSphere}\index{Sphere@{Sphere}}
+
+
+Inheritance diagram for Sphere\+:
+% FIG 0
+
+
+Collaboration diagram for Sphere\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSphere_a1a3d623015724f680fe84cb7d28e8884}{Sphere}} (const \mbox{\hyperlink{classVector3D}{Point3D}} \&center, double radius, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classAMaterial}{AMaterial}} $>$ mat)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classSphere}{Sphere}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSphere_a569c071e50a3e11f678630ee1a17737e}\label{classSphere_a569c071e50a3e11f678630ee1a17737e}} 
+\mbox{\hyperlink{classSphere_a569c071e50a3e11f678630ee1a17737e}{$\sim$\+Sphere}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classSphere}{Sphere}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSphere_aa6ac68b1d53b56175b41ec44d6b16656}{hit}} (const \mbox{\hyperlink{classRay}{Ray}} \&r, \mbox{\hyperlink{classInterval}{Interval}} ray\+\_\+t, \mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&rec) const override
+\begin{DoxyCompactList}\small\item\em Check if a ray hits the sphere. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSphere_a1a3d623015724f680fe84cb7d28e8884}\label{classSphere_a1a3d623015724f680fe84cb7d28e8884}} 
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{Sphere()}{Sphere()}}
+{\footnotesize\ttfamily Sphere\+::\+Sphere (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3D}{Point3D}} \&}]{center,  }\item[{double}]{radius,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classAMaterial}{AMaterial}} $>$}]{mat }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classSphere}{Sphere}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & The center of the sphere \\
+\hline
+{\em radius} & The radius of the sphere \\
+\hline
+{\em mat} & The material of the sphere \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSphere_aa6ac68b1d53b56175b41ec44d6b16656}\label{classSphere_aa6ac68b1d53b56175b41ec44d6b16656}} 
+\index{Sphere@{Sphere}!hit@{hit}}
+\index{hit@{hit}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{hit()}{hit()}}
+{\footnotesize\ttfamily bool Sphere\+::hit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRay}{Ray}} \&}]{r,  }\item[{\mbox{\hyperlink{classInterval}{Interval}}}]{ray\+\_\+t,  }\item[{\mbox{\hyperlink{classHitRecord}{Hit\+Record}} \&}]{rec }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if a ray hits the sphere. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The ray to check \\
+\hline
+{\em ray\+\_\+t} & The interval of the ray \\
+\hline
+{\em rec} & The hit record to fill \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the ray hits the sphere 
+
+false Otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classAObject}{AObject}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/\+Objects/Sphere.\+hpp\item 
+src/\+Objects/Sphere.\+cpp\end{DoxyCompactItemize}
