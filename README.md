@@ -11,9 +11,6 @@ A raytracer is a 3D rendering algorithm that is significantly different from the
 <img src="images/2.png" alt="Logo du projet" width="200"/>
 <img src="images/3.png" alt="Logo du projet" width="200"/>
 <img src="images/4.png" alt="Logo du projet" width="200"/>
-<img src="images/5.png" alt="Logo du projet" width="200"/>
-
-
 
 
 ## Usage/Examples
